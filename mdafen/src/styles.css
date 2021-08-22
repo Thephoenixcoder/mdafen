@@ -1,6 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~swiper/swiper-bundle';
 
+@import "./assets/styles/bootstrap-grid.rtl.css";
+@import "~swiper/swiper-bundle";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+:root {
+    --primary-color: #2596be;
+    --secondary-color: #f2c01a;
+    --third-color: #85dfeb;
+    --text-color: #214d5e;
+    --white-smoke:#ecf8f8;
+    --white:#fff
+  }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: var(--white-smoke);
+  overflow-x: hidden;
+}
+a{
+    color:var(--text-color) ;
+    text-decoration:none;
+    transition:0.5s;
+    -webkit-transition:0.5s;
+    -moz-transition:0.5s;
+    -ms-transition:0.5s;
+    -o-transition:0.5s;
+}
+a:hover,a:focus,a:active{
+    color:var(--secondary-color);
+}
+.page_wrappper {
+  min-height: 100vh;
+}
+
+.mat-drawer-transition .mat-drawer-content {
+  min-height: 100vh !important;
+}
+.example-icon {
+  padding: 0 14px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.top_left_navbar{
+    justify-content: flex-end
+}
+.top_left_navbar i,.top_left_navbar.material-icons{
+    font-size:24px
+}
+.justify-self-end{
+    justify-content: flex-end
+}

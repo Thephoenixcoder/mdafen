@@ -1,0 +1,16 @@
+/* overwrite on side nav content  */
+.top_navbar{
+    padding:15px;
+    background-color:var(--white)
+}
+.right_top_navbar{
+    font-size: 13px;
+    color:var(--text-color) !important;
+    text-decoration: none !important;
+}
+.mat-toolbar.mat-primary{
+    background:var(--primary-color) !important
+}
+.listnav_top  a:last-child{
+    padding-left: 0;
+}

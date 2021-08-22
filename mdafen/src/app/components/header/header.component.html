@@ -1,1 +1,83 @@
-<p>header works!</p>
+<div class="top_navbar d-none d-lg-block">
+    <div class="container ">
+        <div class="row justify-content-between">
+            <div class="col-lg-5 col-6">
+                <div  class="right_top_navbar d-flex ">
+                    <a href="" class="d-flex align-items-center">
+                        <mat-icon class="ms-2" aria-hidden="false" > room</mat-icon>
+                        ٢٩٤ ع شارع الجيش البوابه الرابعه حدائق الاهرام
+                    </a>
+                    <a href="tel:555-666-7777"  class="d-flex ms-3 align-items-center" >
+                        <mat-icon class="ms-2" aria-hidden="false" > phone</mat-icon>
+                        20100000000+
+                    </a>
+                </div>
+              
+            </div>
+            <div class="col-lg-3 col-6 ">
+               <div class="top_left_navbar d-flex ">
+                <a href="www.twitter.com" class="d-flex align-items-center" target="_blank">
+                   
+                    <i class="bi bi-twitter ms-2"></i>
+                </a>
+                <a href="www.facebook.com"  class="d-flex ms-3 align-items-center" target="_blank" >
+                    <mat-icon class="ms-2" aria-hidden="false" > facebook</mat-icon>
+                 
+                </a>
+                <a href="www.youtube.com"  class="d-flex ms-3 align-items-center" target="_blank" >
+                    <i class="bi bi-youtube ms-2"></i>
+                 
+                </a>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="navbar_Wrapper">
+    
+    <mat-toolbar color="primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-4">
+                    logo
+                </div>
+                <div class="col d-flex justify-self-end">
+                    <div fxShow="true" fxHide.lt-md="true" class="listnav_top">
+                        <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+                        <a href="#" mat-button>Menu Item 1</a>
+                        <a href="#" mat-button>Menu Item 2</a>
+                        <a href="#" mat-button>Menu Item 3</a>
+                        <a href="#" mat-button>Menu Item 4</a>
+                        <a href="#" mat-button>Menu Item 5</a>
+                        <a href="#" mat-button>Menu Item 6</a>
+                      </div>
+                  
+                      <div fxShow="true" fxHide.gt-sm="true">
+                          <mat-icon (click)="sidenav.toggle()" aria-hidden="false" aria-label="Example home icon"> menu</mat-icon>
+                      
+                      </div>
+                </div>
+            </div>
+     
+         
+        </div>
+       
+      </mat-toolbar>
+    
+      <mat-sidenav-container fxFlexFill class="example-container">
+        <mat-sidenav #sidenav fxLayout="column">
+          <div fxLayout="column">
+            <a (click)="sidenav.toggle()" href="#" mat-button>Close</a>
+            <a href="#" mat-button>Menu Item 1</a>
+            <a href="#" mat-button>Menu Item 2</a>
+            <a href="#" mat-button>Menu Item 3</a>
+            <a href="#" mat-button>Menu Item 4</a>
+            <a href="#" mat-button>Menu Item 5</a>
+            <a href="#" mat-button>Menu Item 6</a>
+          </div>
+        </mat-sidenav>
+        <mat-sidenav-content fxFlexFill>
+
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+</div>
