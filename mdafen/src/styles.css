@@ -380,6 +380,7 @@ opacity: 0.4
   .p-responsive{
     padding:0 !important
   }
+  
 }
 @media only screen and (max-width : 600px) {
   .mat-toolbar-row, .mat-toolbar-single-row{
@@ -388,13 +389,17 @@ opacity: 0.4
   .container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm{
     width: auto !important
   }
+  .menu_toggle{
+    display: block !important
+  }
+  
+}
+@media only screen and (min-width : 1024px){
+.menu_toggle{
+  display: none !important
+}
 }
 
-@media only screen and (max-width : 1024px) {
-  .container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm{
-   
-  }
-}
 
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
   bottom: 2px !important;
