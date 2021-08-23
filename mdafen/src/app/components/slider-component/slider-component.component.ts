@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+// import Swiper core and required modules
+import SwiperCore, { EffectFade, Navigation, Pagination, Autoplay } from 'swiper/core';
+
+// install Swiper modules
+SwiperCore.use([EffectFade, Navigation, Pagination, Autoplay]);
 
 @Component({
   selector: 'app-slider-component',

@@ -1,7 +1,8 @@
 /* overwrite on side nav content  */
 .top_navbar{
     padding:15px;
-    background-color:var(--white)
+    background:var(--secondary-color) !important
+   
 }
 .right_top_navbar{
     font-size: 13px;
@@ -9,8 +10,74 @@
     text-decoration: none !important;
 }
 .mat-toolbar.mat-primary{
-    background:var(--primary-color) !important
+    background:var(--white);
+   
+   
+}
+.mat-toolbar{
+    position: relative;
+    overflow:hidden
+}
+.mat-toolbar:after{
+    content:url('../../../assets/images/patterntop.png');
+    position: absolute;
+    left:80px;
+    top:-3px;
+    width:147px;
+    height:80px;
+    filter: grayscale(100%);
+  opacity: 0.1
+}
+.mat-toolbar-row, .mat-toolbar-single-row{
+    height:130px
+}
+.listnav_top{
+    display:flex;
+    z-index: 2;
+    align-items: center;
+}
+.listnav_top a {
+    color:var(--text-color)
 }
 .listnav_top  a:last-child{
     padding-left: 0;
+}
+.right_top_navbar a,.top_left_navbar a{
+    color:var(--white)
+}
+.fixed_navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.scrollClass .logo-wrapper{
+    width: 150px;
+    transition: all;
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all;
+}
+.scrollClass .top_navbar  {
+   display:none !important
+}
+.scrollClass .mat-toolbar-row,.scrollClass .mat-toolbar-single-row{
+    height:90px
+}
+.menu_toggle{
+    width: 40px;
+    position: relative;
+    height:100%;
+   
+}
+.menu_toggle button{
+    position: absolute;
+    color: var(--secondary-color);
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-10%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-10%);
+    -ms-transform: translate(-50%,-10%);
+    -o-transform: translate(-50%,-10%);
 }

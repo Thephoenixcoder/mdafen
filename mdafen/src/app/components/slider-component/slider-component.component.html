@@ -1,1 +1,46 @@
-<p>slider-component works!</p>
+<section class="slider_wrapper" id="heroslider">
+    <swiper
+[slidesPerView]="1"
+[effect]="'fade'"
+[navigation]="true"
+[autoplay]="{
+    delay: 5000,
+    disableOnInteraction: false
+  }"
+[pagination]="{
+  clickable: true
+}"
+>
+<ng-template swiperSlide>
+    <div  class="slider_wrapper position-relative">
+        <img src="https://via.placeholder.com/1300" alt="slide001"/>
+        <div class="slider_wrapper_description">
+           <h3> من مناطق الجمهورية</h3>
+           <p>نعمل على توفير كافة الخدمات لعملائنا الكرام بدءاً من إتمام التعاقد وإنهاء تراخيص المدفن حتى يتم التسليم</p>
+           <button mat-button class="btn btn-secondary btn-md btn--rounded mt--40 me-5">تواصل معنا</button>
+           <button mat-button class="btn btn-primary btn-md btn--rounded mt--40">من نحن</button>
+        </div>
+    </div>
+</ng-template>
+<ng-template swiperSlide>
+    <div  class="slider_wrapper position-relative">
+        <img src="https://via.placeholder.com/1300" alt="slide001"/>
+        <div class="slider_wrapper_description">
+           <h3>اللبودي للمقابر لبيع و بناء وشراء المدافن المرخصة بالعديد من مناطق الجمهورية</h3>
+           <p>نعمل على توفير كافة الخدمات لعملائنا الكرام بدءاً من إتمام التعاقد وإنهاء تراخيص المدفن حتى يتم التسليم</p>
+           <button mat-button class="btn btn-secondary btn-md btn--rounded mt--40 me-5">تواصل معنا</button>
+           <button mat-button class="btn btn-primary btn-md btn--rounded mt--40">من نحن</button>
+        </div>
+    </div>
+</ng-template>
+<ng-template swiperSlide> <div  class="slider_wrapper position-relative">
+    <img src="https://via.placeholder.com/1300" alt="slide001"/>
+    <div class="slider_wrapper_description">
+       <h3>اللبودي للمقابر لبيع و بناء وشراء المدافن  الجمهورية</h3>
+       <p>نعمل على توفير كافة الخدمات لعملائنا الكرام بدءاً من إتمام التعاقد وإنهاء تراخيص المدفن حتى يتم التسليم</p>
+       <button mat-button class="btn btn-secondary btn-md btn--rounded mt--40 me-5">تواصل معنا</button>
+       <button mat-button class="btn btn-primary btn-md btn--rounded mt--40">من نحن</button>
+    </div>
+</div></ng-template>
+</swiper>
+</section>

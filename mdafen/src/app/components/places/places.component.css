@@ -1,0 +1,39 @@
+.bg-gradiant{
+    height:80vh;
+    padding:40px;
+    overflow:hidden;
+    background: rgb(209,163,26);
+    background: -moz-linear-gradient(27deg, rgba(209,163,26,1) 0%, rgba(179,140,26,1) 100%);
+    background: -webkit-linear-gradient(27deg, rgba(209,163,26,1) 0%, rgba(179,140,26,1) 100%);
+    background: linear-gradient(27deg, rgba(209,163,26,1) 0%, rgba(179,140,26,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d1a31a",endColorstr="#b38c1a",GradientType=1);
+}
+.places_Card{
+    width: 100%;
+    height:100%;
+    padding: 0;
+    overflow: hidden;
+}
+.card_top{
+    max-height: 50%;
+    width: 100%;
+   overflow: hidden;
+   display: block;
+}
+.card_image{
+    width: 100%;
+    object-fit: cover;
+    margin: auto;
+    height: 100%;
+}
+.card_body{
+    text-align:start;
+    padding: 20px;
+    color:var(--text-color);
+    display:block;
+}
+
+.placeslider{
+    position: relative;
+}
+

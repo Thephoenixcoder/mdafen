@@ -1,3 +1,4 @@
+<div class="fixed_navbar" [ngClass]="{ scrollClass: scrolled }">
 <div class="top_navbar d-none d-lg-block">
     <div class="container ">
         <div class="row justify-content-between">
@@ -33,27 +34,33 @@
         </div>
     </div>
 </div>
-<div class="navbar_Wrapper">
+<div class="navbar_Wrapper shadow">
     
     <mat-toolbar color="primary">
-        <div class="container">
-            <div class="row">
+        <div class="container container-responsive">
+            <div class="row justify-content-between">
                 <div class="col-lg-4 col-4">
-                    logo
+                  <div class="logo-wrapper p-3 p-responsive">
+                   <img src="../../../assets/images/logoorange.svg" class="w-100" alt="logo"/>
+                  </div>
+
                 </div>
-                <div class="col d-flex justify-self-end">
+                <div class="col-lg-3  col-3 d-flex justify-self-end">
                     <div fxShow="true" fxHide.lt-md="true" class="listnav_top">
                         <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-                        <a href="#" mat-button>Menu Item 1</a>
-                        <a href="#" mat-button>Menu Item 2</a>
-                        <a href="#" mat-button>Menu Item 3</a>
-                        <a href="#" mat-button>Menu Item 4</a>
-                        <a href="#" mat-button>Menu Item 5</a>
-                        <a href="#" mat-button>Menu Item 6</a>
+                        <a href="#" mat-button>
+                            الرئيسية</a>
+                        <a href="#" mat-button>من نحن</a>
+                        <a href="#" mat-button>مميزاتنا</a>
+                        <a href="#" mat-button>أماكن المقابر </a>
+                        <a href="#" mat-button>  تواصل معنا</a>
+                      
                       </div>
                   
-                      <div fxShow="true" fxHide.gt-sm="true">
-                          <mat-icon (click)="sidenav.toggle()" aria-hidden="false" aria-label="Example home icon"> menu</mat-icon>
+                      <div class="menu_toggle" (click)="sidenav.toggle()">
+                        
+                        <button mat-icon-button color="primary" aria-label="Example icon button with a menu icon">
+                            <mat-icon>menu</mat-icon></button>
                       
                       </div>
                 </div>
@@ -68,16 +75,16 @@
         <mat-sidenav #sidenav fxLayout="column">
           <div fxLayout="column">
             <a (click)="sidenav.toggle()" href="#" mat-button>Close</a>
-            <a href="#" mat-button>Menu Item 1</a>
-            <a href="#" mat-button>Menu Item 2</a>
-            <a href="#" mat-button>Menu Item 3</a>
-            <a href="#" mat-button>Menu Item 4</a>
-            <a href="#" mat-button>Menu Item 5</a>
-            <a href="#" mat-button>Menu Item 6</a>
+            <a href="#" mat-button>
+                الرئيسية</a>
+            <a href="#" mat-button>من نحن</a>
+            <a href="#" mat-button>مميزاتنا</a>
+            <a href="#" mat-button>أماكن المقابر </a>
+            <a href="#" mat-button>  تواصل معنا</a>
           </div>
         </mat-sidenav>
-        <mat-sidenav-content fxFlexFill>
-
-        </mat-sidenav-content>
+       
+        
       </mat-sidenav-container>
+</div>
 </div>

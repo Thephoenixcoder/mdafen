@@ -1,0 +1,115 @@
+<section id="places" class="position-relative mt-5 mb-5 bg-gradiant">
+  <div class="bg-pattern"></div>
+  <div class="container">
+    <div class="section_title text-white">
+      <h4>أماكن المقابر والمدافن المتوفرة</h4>
+      <p class="subtitle_comp text-white">
+        يتوفر لدى اللبودي للمقابر مدافن للبيع بمساحات مختلفة حسب رغبة العملاء
+        كما يتوافر لدينا أحواش ولحود شرعية في معظم المناطق في مصر، وتعمل الشركة
+        على التيسير على العملاء بسرعة التسليم للمدافن والتسجيل العقاري للمدافن
+        بمجرد التعاقد ، كما أن جميع المقابر لدينا شرعية ومرخصة وعلى جودة عالية
+        من التشطيبات.
+      </p>
+    </div>
+    <div class="places_wrapper">
+      <swiper
+      [loop]="true"
+    [loopFillGroupWithBlank]="true"
+      [breakpoints]="{
+        '640': {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        '768': {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        '1024': {
+          slidesPerView: 3,
+          spaceBetween: 30
+        }
+      }"
+      [spaceBetween]="30"
+      [navigation]="false"
+      [autoplay]="{
+        delay: 2500,
+        disableOnInteraction: false
+      }"
+      [pagination]="{
+        clickable: true
+      }"
+      class="placeslider"
+      >
+        <ng-template swiperSlide
+          >
+          <mat-card class="places_Card">
+              <div class="card_top">
+                  <figure class="card_image">
+                     <img src="../../../assets/images/burial003.jpg" alt=""/>
+                  </figure>
+              </div>
+              <a href="" class="card_body">
+                  <h5>مقابر ومدافن التجمع الخامس</h5>
+                  <span class="d-block">وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال</span>
+              </a>
+              
+          </mat-card>
+          </ng-template
+        ><ng-template swiperSlide
+          >  <mat-card class="places_Card">
+            <div class="card_top">
+                <figure class="card_image">
+                   <img src="../../../assets/images/burial004.jpg" alt=""/>
+                </figure>
+            </div>
+            <a href="" class="card_body">
+                <h5>مقابر ومدافن التجمع الخامس</h5>
+                <span class="d-block">وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال</span>
+            </a>
+            
+        </mat-card></ng-template
+        ><ng-template swiperSlide
+          >  <mat-card class="places_Card">
+            <div class="card_top">
+                <figure class="card_image">
+                   <img src="../../../assets/images/burial005.jpg" alt=""/>
+                </figure>
+            </div>
+            <a href="" class="card_body">
+                <h5>مقابر ومدافن التجمع الخامس</h5>
+                <span class="d-block">وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال</span>
+            </a>
+            
+        </mat-card></ng-template
+        ><ng-template swiperSlide
+          >  <mat-card class="places_Card">
+            <div class="card_top">
+                <figure class="card_image">
+                   <img src="../../../assets/images/burial001.jpg" alt=""/>
+                </figure>
+            </div>
+            <a href="" class="card_body">
+                <h5>مقابر ومدافن التجمع الخامس</h5>
+                <span class="d-block">وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال</span>
+            </a>
+            
+        </mat-card></ng-template
+        ><ng-template swiperSlide
+          >  <mat-card class="places_Card">
+            <div class="card_top">
+                <figure class="card_image">
+                   <img src="../../../assets/images/burial003.jpg" alt=""/>
+                </figure>
+            </div>
+            <a href="" class="card_body">
+                <h5>مقابر ومدافن التجمع الخامس</h5>
+                <span class="d-block">وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال</span>
+            </a>
+            
+        </mat-card></ng-template
+        >
+      
+      </swiper>
+    </div>
+  </div>
+</section>

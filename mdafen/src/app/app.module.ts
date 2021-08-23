@@ -13,6 +13,13 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card';
+import { FooterComponent } from './components/footer/footer.component';
+import { DealingFeaturesComponent } from './components/dealing-features/dealing-features.component';
+import { PlacesComponent } from './components/places/places.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { CustomerreviewComponent } from './components/customerreview/customerreview.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent }
@@ -22,7 +29,13 @@ const routes: Routes = [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    SliderComponentComponent
+    SliderComponentComponent,
+    FooterComponent,
+    DealingFeaturesComponent,
+    PlacesComponent,
+    BannerComponent,
+    CustomerreviewComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +47,8 @@ const routes: Routes = [
     MatIconModule,
     MatListModule,
     MatSidenavModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

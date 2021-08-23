@@ -1,0 +1,60 @@
+<section id="gallery" class="position-relative mt-5 mb-5">
+  <div class="bg-pattern"></div>
+  <div class="container">
+    <div class="section_title">
+      <h4>مكتبة الصور</h4>
+      <p class="subtitle_comp">
+        وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي " 
+      </p>
+    </div>
+    <div class="gallery_slider">
+        <swiper
+    [effect]="'coverflow'"
+    [grabCursor]="true"
+    
+    [centeredSlides]="true"
+    [slidesPerView]="'auto'"
+    [coverflowEffect]="{
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false
+    }"
+    [pagination]="true"
+    [centeredSlides]="true"
+    [loop]="true"
+    [navigation]="true"
+    [loopFillGroupWithBlank]="true"
+    [breakpoints]="{
+        '640': {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        '768': {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        '1024': {
+          slidesPerView: 3,
+          spaceBetween: 30
+        }
+      }"
+  >
+    <ng-template swiperSlide
+      ><img src="../../../assets/images/burial001.jpg" alt="slider" /></ng-template
+    ><ng-template swiperSlide
+      ><img src="../../../assets/images/burial002.jpg" /></ng-template
+    ><ng-template swiperSlide
+      ><img src="../../../assets/images/burial003.jpg" /></ng-template
+    >
+    <ng-template swiperSlide
+      ><img src="../../../assets/images/burial004.jpg" /></ng-template
+    >
+    <ng-template swiperSlide
+      ><img src="../../../assets/images/burial005.jpg" /></ng-template
+    >
+  </swiper>
+    </div>
+  </div>
+</section>
