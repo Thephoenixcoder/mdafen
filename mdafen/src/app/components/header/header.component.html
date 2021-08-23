@@ -4,7 +4,7 @@
         <div class="row justify-content-between">
             <div class="col-lg-5 col-6">
                 <div  class="right_top_navbar d-flex ">
-                    <a href="" class="d-flex align-items-center">
+                    <a href="www.google.com" class="d-flex align-items-center">
                         <mat-icon class="ms-2" aria-hidden="false" > room</mat-icon>
                         ٢٩٤ ع شارع الجيش البوابه الرابعه حدائق الاهرام
                     </a>
@@ -40,19 +40,19 @@
         <div class="container container-responsive">
             <div class="row justify-content-between">
                 <div class="col-lg-4 col-4">
-                  <div class="logo-wrapper p-3 p-responsive">
+                  <div class="logo-wrapper p-responsive">
                    <img src="../../../assets/images/logoorange.svg" class="w-100" alt="logo"/>
                   </div>
 
                 </div>
                 <div class="col-lg-3  col-3 d-flex justify-self-end">
                     <div fxShow="true" fxHide.lt-md="true" class="listnav_top">
-                        <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+                   
                         <a href="#" mat-button>
                             الرئيسية</a>
                         <a href="#" mat-button>من نحن</a>
-                        <a href="#" mat-button>مميزاتنا</a>
-                        <a href="#" mat-button>أماكن المقابر </a>
+                        <a href="#features" mat-button>مميزاتنا</a>
+                        <a href="#places" mat-button>أماكن المقابر </a>
                         <a href="#" mat-button>  تواصل معنا</a>
                       
                       </div>
@@ -71,10 +71,10 @@
        
       </mat-toolbar>
     
-      <mat-sidenav-container fxFlexFill class="example-container">
+      <mat-sidenav-container fxFlexFill >
         <mat-sidenav #sidenav fxLayout="column">
-          <div fxLayout="column">
-            <a (click)="sidenav.toggle()" href="#" mat-button>Close</a>
+          <div fxLayout="column" class="list_inline">
+          
             <a href="#" mat-button>
                 الرئيسية</a>
             <a href="#" mat-button>من نحن</a>

@@ -29,7 +29,7 @@
   opacity: 0.1
 }
 .mat-toolbar-row, .mat-toolbar-single-row{
-    height:130px
+    height:80px
 }
 .listnav_top{
     display:flex;
@@ -81,9 +81,9 @@
     -ms-transform: translate(-50%,-10%);
     -o-transform: translate(-50%,-10%);
 }
-@media only screen and (max-width:768px) {
-   
+.list_inline span{
+    text-align: right;
 }
-@media only screen and (max-width : 1024px) {
-   
+.list_inline a{
+    padding: 7px 15px;
 }

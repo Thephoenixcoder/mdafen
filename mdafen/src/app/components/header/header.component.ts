@@ -1,4 +1,4 @@
-import { Component, OnInit,HostListener } from '@angular/core';
+import { Component,HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -11,10 +11,12 @@ export class HeaderComponent implements OnInit {
  
   ngOnInit(): void {
   }
-  // @HostListener('window:scroll', [])
-  // // tslint:disable-next-line:typedef
-  // onWindowScroll() {
-  //     this.scrolled = window.scrollY > 0;
-  // }
+
+  @HostListener('window:scroll', [])
+  // tslint:disable-next-line:typedef
+  onWindowScroll() {
+      this.scrolled = window.scrollY > 30;
+  }
+ 
 
 }

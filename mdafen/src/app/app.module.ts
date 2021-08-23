@@ -20,6 +20,7 @@ import { PlacesComponent } from './components/places/places.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { CustomerreviewComponent } from './components/customerreview/customerreview.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { VideosComponent } from './components/videos/videos.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent }
@@ -35,7 +36,8 @@ const routes: Routes = [
     PlacesComponent,
     BannerComponent,
     CustomerreviewComponent,
-    GalleryComponent
+    GalleryComponent,
+    VideosComponent
   ],
   imports: [
     BrowserModule,

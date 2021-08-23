@@ -15,7 +15,8 @@
 html,
 body {
   height: 100%;
-  line-height:3
+  line-height:3;
+  scroll-behavior: smooth;
 }
 @font-face {
   font-family: "SST Arabic";
@@ -114,8 +115,13 @@ a:hover,a:focus,a:active{
   min-height: 100vh !important;
 }
 .mat-drawer-container{
-  display: none;
+  display: none !important;
+  background-color: transparent !important;
 }
+.mat-drawer-container-has-open{
+  display: block !important;
+}
+
 .mat-drawer-container 
 .example-icon {
   padding: 0 14px;
@@ -133,8 +139,9 @@ a:hover,a:focus,a:active{
     justify-content: flex-end
 }
 .logo-wrapper {
-  width:200px;
+  width:140px;
   color:var(--text-color);
+  margin-top: 13px;
   
 }
 .logo-wrapper img {
@@ -170,7 +177,7 @@ left:0;
 right:0;
 height:100%;
 width:100%;
-background-color: #000;
+background-color: #ffdf81;
 opacity: 0.4
 }
 
@@ -368,9 +375,7 @@ opacity: 0.4
   .btn-md{
     min-width: 130px !important
   }
-  .logo-wrapper{
-    width:100% !important
-  }
+  
   .container-responsive{
     width:100% !important;
   }
@@ -392,6 +397,9 @@ opacity: 0.4
   .menu_toggle{
     display: block !important
   }
+  .logo-wrapper{
+    width:100% !important
+  }
   
 }
 @media only screen and (min-width : 1024px){
@@ -403,4 +411,15 @@ opacity: 0.4
 
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
   bottom: 2px !important;
+}
+.mat-drawer{
+  width:200px
+}
+
+.what_call_btn{
+  font-size: 2rem;
+  color:var(--white) !important
+}
+.what_call_btn i{
+  color:var(--white) !important
 }

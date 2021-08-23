@@ -36,4 +36,7 @@
 .placeslider{
     position: relative;
 }
-
+.bg_zindex{
+    opacity: 0.1;
+    filter: brightness(0) invert(1);
+}

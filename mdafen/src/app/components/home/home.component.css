@@ -1,0 +1,23 @@
+.what_call_btn{
+    position:fixed;
+    background-color: var(--secondary-color);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    bottom:5%;
+    left:2%;
+    width:60px;
+    height:60px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    z-index:14;
+    -webkit-box-shadow: 4px 4px 16px 0px rgba(50, 50, 50, 0.4);
+-moz-box-shadow:    4px 4px 16px 0px rgba(50, 50, 50, 0.4);
+box-shadow:         4px 4px 16px 0px rgba(50, 50, 50, 0.4);
+}
+.phone_Call{
+    bottom:15%
+}
